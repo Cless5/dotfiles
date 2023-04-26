@@ -1,3 +1,4 @@
+# Nord theme:   https://github.com/nordtheme/nord
 nord =  {
     "background":   "#2e3440",
     "background2":  "#434c5e",
