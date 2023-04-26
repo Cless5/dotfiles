@@ -16,6 +16,8 @@ alias nf="neofetch --source /home/cless/.config/neofetch/archlinux-ascii.txt --c
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 bindkey "^[[3~" delete-char
+bindkey "^[[1;3C" forward-word
+bindkey "^[[1;3D" backward-word
 
 if [ "$USER" = "root" ]; then
 	PS1='%F{red}  %~ %F{white} '
