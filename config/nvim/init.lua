@@ -7,11 +7,7 @@ require("plugins")
 require("nvim-autopairs").setup()
 require("lualine").setup({
 	options = {
-		icons_enabled = true
+		icons_enabled = true,
+		theme = "nord"
 	}
 })
-require("onedark").setup({
-	style = "deep"
-})
-require("onedark").load()
-vim.o.colorscheme = "onedark"
