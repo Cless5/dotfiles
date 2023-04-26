@@ -1,2 +1,3 @@
-# dotfiles
-My config files for linux.
+# My dotfiles
+
+My config files for linux using nord theme.
