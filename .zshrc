@@ -20,6 +20,7 @@ alias vim="nvim"
 alias grep="grep --color=auto"
 alias nf="neofetch --source /home/cless/.config/neofetch/archlinux-ascii.txt --color_blocks off --disable os model kernel uptime packages resolution wm theme icons"
 
+# Binds
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 bindkey "^[[3~" delete-char
@@ -32,7 +33,6 @@ else
 	PS1=$'%F{blue}  %~ ${vcs_info_msg_0_}\n%F{white} '
 fi
 
-# zsh-users
+# https://github.com/zsh-users
 source /home/cless/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /home/cless/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-export PATH=$PATH:/home/cless/.local/bin
