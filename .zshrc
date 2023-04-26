@@ -2,6 +2,13 @@
 # ~/.zshrc
 #
 
+# Git
+autoload -Uz vcs_info
+precmd() { vcs_info }
+zstyle ':vcs_info:git:*' formats '%F{green} %b'
+setopt PROMPT_SUBST
+
+# Alias
 alias ls="lsd"
 alias l="ls"
 alias ll="ls -l"
@@ -20,11 +27,12 @@ bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
 
 if [ "$USER" = "root" ]; then
-	PS1='%F{red}  %~ %F{white} '
+	PS1=$'%F{red}  %~ ${vcs_info_msg_0_}\n%F{white} '
 else
-	PS1='%F{blue}  %~ %F{white} '
+	PS1=$'%F{blue}  %~ ${vcs_info_msg_0_}\n%F{white} '
 fi
 
 # zsh-users
 source /home/cless/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /home/cless/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH=$PATH:/home/cless/.local/bin
