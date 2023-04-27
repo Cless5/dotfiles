@@ -41,18 +41,23 @@ _bar = bar.Bar(
                 this_screen_border=theme["red"],
             ),
             widget.Spacer(),
-            #widget.Systray(),
+            widget.Systray(),
             power_arrow(theme["background"], theme["primary"]),
             widget.Clock(
-                format="%Y-%m-%d",
+                format="  %Y-%m-%d",
                 background=theme["primary"],
                 ),
             power_arrow(theme["primary"], theme["secondary"]),
             widget.Clock(
-                format="%H:%M",
+                format="  %H:%M",
                 background=theme["secondary"]
                 ),
-            power_arrow(theme["secondary"], theme["background2"]),
+            power_arrow(theme["secondary"], theme["primary"]),
+            widget.Battery(
+                format=" {percent: 2.0%}",
+                background=theme["primary"],
+                ),
+            power_arrow(theme["primary"], theme["background2"]),
             widget.QuickExit(
                 default_text="󰗼",
                 countdown_format="{}",
