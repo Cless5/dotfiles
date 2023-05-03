@@ -11,5 +11,3 @@ o.backup		= false
 o.writebackup	= false
 o.updatetime	= 300
 o.signcolumn	= "yes"
-
-vim.cmd[[colorscheme nord]]
