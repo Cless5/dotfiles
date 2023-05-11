@@ -16,12 +16,12 @@ Here's how to [install](#setup) my dotfiles.
 
 ## Setup
 
-You need to have any nerdfont installed in your system, i use Iosevka NF
+You need to have any [nerdfont](https://www.nerdfonts.com/font-downloads) installed in your system, i use Iosevka NF
 
 1. Install packages
 ```shell
 # For arch users
-sudo pacman -S qtile zsh rofi xorg xorg-server xorg-xrandr picom neovim kitty neofetch git lightdm light-gtk-greeter
+sudo pacman -S qtile zsh rofi xorg xorg-server xorg-xrandr picom neovim kitty neofetch git lightdm lightdm-gtk-greeter
 paru -S nvim-packer-git
 ```
 
