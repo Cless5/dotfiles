@@ -4,6 +4,6 @@ from .widgets import _bar
 
 screens = [
     Screen(
-        bottom=_bar,
+        top=_bar,
     ),
 ]
