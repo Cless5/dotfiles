@@ -4,7 +4,7 @@ from libqtile.widget import base
 from .themes import theme
 
 widget_defaults = dict(
-    font="Iosevka NF",
+    font="Iosevka NF",  # Replace your font here
     fontsize=13,
     padding=3,
     background=theme["background"],
