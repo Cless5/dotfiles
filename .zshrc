@@ -18,7 +18,7 @@ alias cat="bat"
 alias pacman="sudo pacman"
 alias vim="nvim"
 alias grep="grep --color=auto"
-alias nf="neofetch --source /home/cless/.config/neofetch/archlinux-ascii.txt --color_blocks off --disable os model kernel uptime packages resolution wm theme icons"
+alias nf="neofetch --source $HOME/.config/neofetch/archlinux-ascii.txt --color_blocks off --disable os model kernel uptime packages resolution wm theme icons"
 
 # Binds
 bindkey "^[[H" beginning-of-line
@@ -34,5 +34,5 @@ else
 fi
 
 # https://github.com/zsh-users
-source /home/cless/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /home/cless/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/cless/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
