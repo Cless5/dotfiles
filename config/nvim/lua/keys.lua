@@ -21,6 +21,3 @@ map("n", "<C-Right>", "<CMD> wincmd l <CR>")	-- Nav right split			Ctrl + right
 map("n", "<C-Down>", "<CMD> wincmd k <CR>")		-- Nav down split			Ctrl + down
 map("n", "<C-w>", "<CMD> q <CR>")				-- Close split				Ctrl + q
 map("n", "<C-y>", "<CMD> vsplit | terminal<CR>")-- New split with terminal	Ctrl + y
-
--- Select coc.nvim highlighted suggestion
-map("i", "<cr>", [[coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"]], {silent = true, noremap = true, expr = true, replace_keycodes = false})
