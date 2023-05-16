@@ -49,7 +49,7 @@ inside neovim
 sudo systemctl enable lightdm
 ```
 
-6. Modify ~/.config/qtile/autostart.sh to put your screen and resolution in the `xrandr` line, and the path to your desktop wallpaper. You can check your available screens by running xrandr
+6. Modify `~/.config/qtile/autostart.sh` to put your screen and resolution in the `xrandr` line, and the path to your desktop wallpaper. You can check your available screens by running xrandr
 ```shell
 #!/bin/bash
 
