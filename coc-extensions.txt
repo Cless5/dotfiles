@@ -1,0 +1,9 @@
+coc-python
+coc-tsserver
+coc-css
+coc-html
+coc-html-css-support
+coc-pyright
+coc-lua
+coc-git
+@yaegassy/coc-tailwindcss3
