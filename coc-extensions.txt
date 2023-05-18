@@ -1,3 +1,4 @@
+# Extensions that i use with coc.nvim
 coc-python
 coc-tsserver
 coc-css
