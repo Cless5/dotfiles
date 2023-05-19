@@ -20,7 +20,7 @@ gruvbox = {
     "green":        "#98971a"   # green
         }
 
-# https://github.com/catppuccin/catppuccin 
+# https://github.com/catppuccin/catppuccin
 catppuccin_latte = {
     "background":   "#eff1f5",  # Base
     "background2":  "#ccd0da",  # Surface0
@@ -41,6 +41,16 @@ catppuccin_frappe = {
     "green":        "#a6d189"   # Green
         }
 
+catppuccin_macchiato = {
+    "background":   "#1e1e2e",  # Base
+    "background2":  "#313244",  # Surface0
+    "foreground":   "#cdd6f4",  # Text
+    "primary":      "#cba6f7",  # Mauve
+    "secondary":     "#b4befe", # Lavender
+    "red":          "#f38ba8",  # Red
+    "green":        "#a6e3a1"   # Green
+        }
+
 catppuccin_mocha = {
     "background":   "#1e1e2e",  # Base
     "background2":  "#313244",  # Surface0
@@ -51,6 +61,15 @@ catppuccin_mocha = {
     "green":        "#a6e3a1"   # Green
         }
 
+# https://github.com/davidmathers/tokyo-night-kitty-theme
+tokyo_night = {
+    "background":   "#1a1b26",  # Background
+    "background2":  "#414868",  # Black
+    "foreground":   "#a9b1d6",  # Foreground
+    "primary":      "#bb9af7",  # Magenta
+    "secondary":    "#7dcfff",  # Cyan
+    "red":          "#f7768e",  # Red
+    "green":        "#73daca"   # Green
+        }
 
-
-theme = nord 
+theme = tokyo_night
