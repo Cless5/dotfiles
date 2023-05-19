@@ -16,7 +16,7 @@ Here's how to [install](#setup) my dotfiles.
 
 ## Setup
 
-You need to have any [nerdfont](https://www.nerdfonts.com/font-downloads) installed in your system, i use Iosevka NF
+You need to have any [nerdfont](https://www.nerdfonts.com/font-downloads) installed in your system, i use Iosevka and ShureTechMono
 
 1. Install packages
 ```shell
