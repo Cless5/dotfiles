@@ -71,7 +71,7 @@ widget_defaults = dict(
 
 ```
 # ~/.config/kitty/kitty.conf
-font_family IosevkaTerm Nerd Font   # Replace your font here
+font_family ShureTechMono Nerd Font   # Replace your font here
 ...
 ```
 
