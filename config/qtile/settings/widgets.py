@@ -31,14 +31,13 @@ _bar = bar.Bar(
             widget.WindowName(),
             widget.Spacer(),
             widget.GroupBox(
-                block_highlight_text_color=theme["foreground"],
+                block_highlight_text_color=theme["background"],
                 padding=10,
                 active=theme["secondary"],
                 inactive=theme["background2"],
                 highlight_color=theme["primary"],
                 highlight_method="line",
-                this_current_screen_border=theme["red"],
-                this_screen_border=theme["red"],
+                this_current_screen_border=theme["foreground"],
             ),
             widget.Spacer(),
             widget.Systray(),
@@ -46,16 +45,22 @@ _bar = bar.Bar(
             widget.Clock(
                 format="  %Y-%m-%d",
                 background=theme["primary"],
+                foreground=theme["background"]
                 ),
             power_arrow(theme["primary"], theme["secondary"]),
             widget.Clock(
                 format="  %H:%M",
-                background=theme["secondary"]
+                background=theme["secondary"],
+                foreground=theme["background"]
                 ),
             power_arrow(theme["secondary"], theme["primary"]),
             widget.Battery(
-                format=" {percent: 2.0%}",
+                format="{char}{percent: 2.0%}",
+                charge_char="󰂄",
+                discharge_char="󰁹",
+                unknow_char="󰂑",
                 background=theme["primary"],
+                foreground=theme["background"]
                 ),
             power_arrow(theme["primary"], theme["background2"]),
             widget.QuickExit(
@@ -67,5 +72,6 @@ _bar = bar.Bar(
                 fontsize=25,
                 ),
             ],
-        40
+        40,
+        margin=[6,5,3,5]
         )
