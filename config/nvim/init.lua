@@ -1,8 +1,8 @@
 -- Settings
 require("settings")
-require("plugins")
 
 -- Plugins
+require("plugins")
 require("nvim-autopairs").setup()
 require("lualine").setup({
 	options = {

@@ -19,7 +19,8 @@ return require('packer').startup(function(use)
   use 'ryanoasis/vim-devicons'
 
   use {
-	'nvim-lualine/lualine.nvim',
-	requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+		'nvim-lualine/lualine.nvim',
+		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
+
 end)

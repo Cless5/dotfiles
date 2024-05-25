@@ -1,0 +1,12 @@
+{
+  "snippets.ultisnips.pythonPrompt": false,
+
+	// ---------- Snippets ---------- //
+	"snippets.priority": 1,
+	"snippets.trace": "verbose",
+	"snippets.autoTrigger": true,
+	"snippets.userSnippetsDirectory": "~/.config/nvim/snippets/ultisnips",
+	"snippets.textmateSnippetsRoots": "~/.config/nvim/snippets/textmate",
+	"snippets.ultisnips.enable": true,
+	"snippets.ultisnips.usePythonx": true,
+}
