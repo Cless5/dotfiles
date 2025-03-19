@@ -10,4 +10,10 @@ require("lualine").setup({
 	}
 })
 
+-- Uncomment lines after installing onedark
+-- require('onedark').setup {
+-- 	style = 'warmer'
+-- }
+-- require('onedark').load()
+
 require("keys")
