@@ -36,6 +36,11 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
+	-- Prettier
+	use 'neovim/nvim-lspconfig'
+	use 'jose-elias-alvarez/null-ls.nvim'
+	use 'MunifTanjim/prettier.nvim'
+
 	-- OneDark (uncomment line below after running PackerInstall)
 	-- use 'navarasu/onedark.nvim'
 

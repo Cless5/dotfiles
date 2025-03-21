@@ -10,6 +10,23 @@ require("lualine").setup({
 	}
 })
 
+local prettier = require("prettier")
+
+prettier.setup({
+	bin = 'prettier',
+	filetypes = {
+		'html',
+		'htmldjango',
+		'javascript',
+		'javascriptreact',
+		'json',
+		'markdown',
+		'typescript',
+		'typescriptreact',
+		'css'
+	}
+})
+
 -- Uncomment lines after installing onedark
 -- require('onedark').setup {
 -- 	style = 'warmer'

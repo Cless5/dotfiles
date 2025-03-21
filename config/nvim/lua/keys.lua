@@ -31,5 +31,8 @@ map("n", "<C-d>", "viw", { noremap = true, silent = true })	-- Select word in cu
 map('n', '<A-f>', '<CMD> Telescope find_files <CR>', { noremap = true, silent = true })
 map('n', '<C-f>', '<CMD> Telescope live_grep <CR>', { noremap = true, silent = true })
 
+-- Prettier
+map('n', '<AS-f>', '<CMD> Prettier <CR>', { noremap = true, silent = true })
+
 -- Select coc.nvim highlighted suggestion
 vim.api.nvim_set_keymap("i", "<cr>", [[coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"]], {silent = true, noremap = true, expr = true, replace_keycodes = false})
