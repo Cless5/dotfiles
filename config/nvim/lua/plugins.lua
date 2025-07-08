@@ -24,6 +24,8 @@ return require('packer').startup(function(use)
 		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
+	use 'Mohammed-Taher/AdvancedNewFile.nvim'
+
 	-- Telescope dependencies
 	use 'nvim-lua/plenary.nvim'
 	use 'BurntSushi/ripgrep'

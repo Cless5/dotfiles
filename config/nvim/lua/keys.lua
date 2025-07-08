@@ -4,7 +4,7 @@ local function map(mode, key, rhs, opts)
 end
 
 -- NerdTree
-map("n", "<C-n>", "<CMD> NERDTreeToggle <CR>")
+map("n", "<AS-b>", "<CMD> NERDTreeToggle <CR>")
 
 -- Tabs
 map("n", "<A-t>", "<CMD> tabnew <CR>")
@@ -21,6 +21,9 @@ map("n", "<C-l>", "<CMD> wincmd l <CR>")
 map("n", "<C-k>", "<CMD> wincmd k <CR>")
 map("n", "<C-q>", "<CMD> q <CR>")
 map("n", "<C-y>", "<CMD> vsplit | terminal<CR>")
+
+-- NewFile
+map('n', '<C-n>', '<CMD> AdvancedNewFile <CR>')
 
 -- Code editing
 map("n", "<A-k>", "<CMD> m-2 <CR>", { noremap = true, silent = true})	-- Move line up		Alt + Up
