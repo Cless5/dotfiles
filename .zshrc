@@ -21,7 +21,6 @@ alias vim="nvim"
 alias py="python"
 alias djo="python manage.py"
 alias grep="grep --color=auto"
-alias nf="neofetch --source $HOME/.config/neofetch/archlinux-ascii.txt --color_blocks off --disable os model kernel uptime packages resolution wm theme icons"
 
 # Binds
 bindkey "^[[H" beginning-of-line
@@ -40,3 +39,8 @@ fi
 # https://github.com/zsh-users
 source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+typeset -A ZSH_HIGHLIGHT_REGEXP
+ZSH_HIGHLIGHT_REGEXP+=('\bpls\b' 'fg=cyan')
+
+ZSH_HIGHLIGHT_HIGHLIGHTERS+=(regexp)
