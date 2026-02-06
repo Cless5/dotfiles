@@ -14,13 +14,27 @@ alias l="ls"
 alias ll="ls -l"
 alias la="ls -A"
 alias lla="ls -lA"
-alias cat="bat"
 alias pacman="sudo pacman"
 alias pls="sudo"
 alias vim="nvim"
 alias py="python"
 alias djo="python manage.py"
 alias grep="grep --color=auto"
+
+cat() {
+  if [ "$#" -eq 0 ]; then
+    command bat
+    return
+  fi
+
+  for file in "$@"; do
+    if [[ "$file" ==  *.md ]]; then
+      mdcat "$file" | bat
+    else
+      bat "$file"
+    fi
+  done
+}
 
 # Binds
 bindkey "^[[H" beginning-of-line
