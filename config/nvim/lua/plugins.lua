@@ -10,7 +10,7 @@ return require('packer').startup(function(use)
     branch = 'release'
   }
 
-  use 'preservim/nerdtree'
+  use 'stevearc/oil.nvim'
 
   use 'nvim-tree/nvim-web-devicons'
 
@@ -20,28 +20,28 @@ return require('packer').startup(function(use)
   use 'ryanoasis/vim-devicons'
 
   use {
-		'nvim-lualine/lualine.nvim',
-		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+	'nvim-lualine/lualine.nvim',
+	requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
-
-	use 'Mohammed-Taher/AdvancedNewFile.nvim'
 
 	-- Telescope dependencies
 	use 'nvim-lua/plenary.nvim'
-	use 'BurntSushi/ripgrep'
-	use 'sharkdp/fd'
-	use 'nvim-treesitter/nvim-treesitter'
-
 	use {
-		'nvim-telescope/telescope.nvim',
-		tag = '0.1.8',
-		requires = { {'nvim-lua/plenary.nvim'} }
+		"nvim-telescope/telescope-fzf-native.nvim",
+		run = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release --target install",
 	}
+	use 'nvim-telescope/telescope.nvim'
 
 	-- Prettier
 	use 'neovim/nvim-lspconfig'
 	use 'jose-elias-alvarez/null-ls.nvim'
-	use 'MunifTanjim/prettier.nvim'
+
+	use({
+		"stevearc/conform.nvim",
+		config = function()
+			require("conform").setup()
+		end,
+	})
 
 	-- OneDark (uncomment line below after running PackerInstall)
 	-- use 'navarasu/onedark.nvim'

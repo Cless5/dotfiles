@@ -6,30 +6,35 @@ require("plugins")
 require("nvim-autopairs").setup()
 require("lualine").setup({
 	options = {
-		icons_enabled = true
-	}
+		icons_enabled = true,
+	},
 })
 
-local prettier = require("prettier")
+require("oil").setup()
 
-prettier.setup({
-	bin = 'prettier',
-	filetypes = {
-		'html',
-		'htmldjango',
-		'javascript',
-		'javascriptreact',
-		'json',
-		'markdown',
-		'typescript',
-		'typescriptreact',
-		'css'
-	}
+require("conform").setup({
+	formatters_by_ft = {
+		lua = { "stylua" },
+		javascript = { "prettier" },
+		javascriptreact = { "prettier" },
+		typescript = { "prettier" },
+		typescriptreact = { "prettier" },
+		css = { "prettier "},
+		html = { "prettier "},
+		json = { "prettier "},
+		markdown = { "prettier "},
+		htmldjango = { "djlint "},
+		python = { "black "},
+	},
+	format_on_save = {
+		lsp_format = "fallback",
+		timeout_ms = 500,
+	},
 })
 
 -- Uncomment lines after installing onedark
 -- require('onedark').setup {
--- 	style = 'warmer'
+-- 	style = 'darker'
 -- }
 -- require('onedark').load()
 
