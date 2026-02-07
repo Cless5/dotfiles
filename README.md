@@ -21,7 +21,7 @@ You need to have any [nerdfont](https://www.nerdfonts.com/font-downloads) instal
 1. Install packages
 ```shell
 # For arch users
-sudo pacman -S qtile zsh rofi xorg xorg-server xorg-xrandr picom neovim kitty neofetch git lightdm lightdm-gtk-greeter
+sudo pacman -S qtile zsh rofi xorg xorg-server xorg-xrandr picom neovim kitty git lightdm lightdm-gtk-greeter lsd bat mdcat 
 paru -S nvim-packer-git
 ```
 
@@ -38,11 +38,42 @@ cp -r config/* ~/.config/
 source ~/.zshrc
 ```
 
-4. Install neovim plugins by running
+4. Install neovim plugins
+
+Install dependencies
+
+```
+sudo pacman -S fd ripgrep stylua python-pipx python-black
+pipx install djlint
+npm i -g prettier
+```
+
+Then run
+
 ```
 :PackerInstall
 ```
-inside neovim
+
+while inside neovim
+
+Then uncomment necessary lines to get onedark running inside the configs for neovim
+
+```lua
+-- lua/plugins.lua
+use 'navarasu/onedark.nvim'
+```
+
+Run `:PackerInstall` once more
+
+And then uncomment:
+
+```lua
+-- init.lua
+require("onedark").setup({
+    style = "darker"
+})
+require("onedark").load()
+```
 
 5. Enable services
 ```shell
